@@ -166,11 +166,7 @@ class WickedPdf
   end
 
   def valid_option(name)
-    if binary_version < BINARY_VERSION_WITHOUT_DASHES
-      "--#{name}"
-    else
-      name
-    end
+    name
   end
 
   def make_options(options, names, prefix = '', type = :string)
